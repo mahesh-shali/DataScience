@@ -1,16 +1,28 @@
 {
+  "version": 2,
   "routes": [
     {
-      "src": "/client/app.html",
-      "dest": "/client/app.html"
+      "src": "/real_estate_pridiction/client/app.html",
+      "dest": "/real_estate_pridiction/client/app.html"
     },
     {
       "src": "/api/get_location_names",
-      "dest": "/server/server.py"
+      "dest": "/real_estate_pridiction/server/server.py"
     },
     {
       "src": "/api/predict_home_price",
-      "dest": "/server/server.py"
+      "dest": "/real_estate_pridiction/server/server.py"
     }
-  ]
+  ],
+  "builds": [
+    {
+      "src": "real_estate_pridiction/server/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "functions": {
+    "api/*": {
+      "maxDuration": 10
+    }
+  }
 }
