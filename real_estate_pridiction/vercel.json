@@ -1,16 +1,16 @@
 {
   "routes": [
     {
-      "src": "/real_estate_pridiction/client/app.html",
-      "dest": "/real_estate_pridiction/client/app.html"
+      "src": "/client/app.html",
+      "dest": "/client/app.html"
     },
     {
       "src": "/api/get_location_names",
-      "dest": "/real_estate_pridiction/server/server.py"
+      "dest": "/server/server.py"
     },
     {
       "src": "/api/predict_home_price",
-      "dest": "/real_estate_pridiction/server/server.py"
+      "dest": "/server/server.py"
     }
   ]
 }
