@@ -1,23 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.py",
-      "use": "@vercel/python"
-    }
-  ],
   "routes": [
     {
-      "src": "/api/predict_home_price",
-      "dest": "server.py"
-    },
-    {
-      "src": "/api/get_location_names",
-      "dest": "server.py"
+      "src": "/api/(.*)",
+      "dest": "/server/server.py"
     },
     {
       "src": "/(.*)",
-      "dest": "server.py"
+      "dest": "/client/app.html"
     }
   ]
 }
