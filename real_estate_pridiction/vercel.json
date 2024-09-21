@@ -8,7 +8,15 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/predict_home_price",
+      "dest": "server.py"
+    },
+    {
+      "src": "/api/get_location_names",
+      "dest": "server.py"
+    },
+    {
+      "src": "/(.*)",  // Default route to catch everything else
       "dest": "server.py"
     }
   ]
