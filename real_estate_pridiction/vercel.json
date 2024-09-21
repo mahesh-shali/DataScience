@@ -16,7 +16,7 @@
       "dest": "server.py"
     },
     {
-      "src": "/(.*)",  // Default route to catch everything else
+      "src": "/(.*)",
       "dest": "server.py"
     }
   ]
