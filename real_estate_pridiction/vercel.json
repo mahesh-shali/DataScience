@@ -5,8 +5,12 @@
       "dest": "/real_estate_pridiction/client/app.html"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "/api/get_location_names",
+      "dest": "/real_estate_pridiction/server/server.py"
+    },
+    {
+      "src": "/api/predict_home_price",
+      "dest": "/real_estate_pridiction/server/server.py"
     }
   ]
 }
